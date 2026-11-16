@@ -95,7 +95,7 @@ python -m pip install -r requirements.txt
 python analysis/plot.py
 ```
 
-The table parser uses Python 3.10+ and its standard library; figure generation requires Python 3.11+. Scripts under [`scripts/`](scripts/) were reconstructed during publication, then checked locally; they were not the original recording harness. See the [two-node guide](docs/reproduce.md) before running them.
+The table parser uses Python 3.10+ and its standard library; figure generation requires Python 3.11+. **The original two-node experiment, including both NCCL transport runs, was completed and is documented above.** The helpers under [`scripts/`](scripts/) were added during publication from the recorded commands and notes, then checked locally. These exact helper versions have not been used to repeat the cloud experiment; that describes their verification status, not an unfinished experiment step. See the [two-node guide](docs/reproduce.md) before running them.
 
 ## Findings and limits
 

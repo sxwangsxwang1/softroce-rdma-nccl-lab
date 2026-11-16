@@ -1,6 +1,8 @@
 # Reproducing the two-node lab
 
-These commands are a reconstruction prepared during publication. The published measurements come from the original logs, not from running these helper scripts. Offline parsing, real-log tests, plotting, and shell syntax were checked locally. The Linux/GPU commands require a fresh two-node run to validate end to end.
+**The original five-stage experiment was completed:** environment installation, rxe/GID setup, connectivity and packet capture, RDMA/TCP benchmarks, and NCCL AllReduce over both RDMA and Socket. The archived logs contain the results; the optional 4-QP scan's failure is retained and documented.
+
+This guide and its helper scripts were assembled during publication from those commands and notes. Offline parsing, real-log tests, plotting, shell syntax, and launcher command construction were checked locally. The exact helper versions have not been used to repeat the cloud experiment. A future two-node run would validate these new helpers, rather than complete an outstanding stage of the original experiment. The numbered sections below organize setup and execution for readers; cleanup is listed separately at the end.
 
 ## 1. Prepare two Linux VMs
 
