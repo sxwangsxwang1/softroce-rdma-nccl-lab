@@ -1,0 +1,43 @@
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages will be DOWNGRADED:
+  libnccl-dev libnccl2
+0 upgraded, 0 newly installed, 2 downgraded, 0 to remove and 130 not upgraded.
+Need to get 434 MB of archives.
+After this operation, 442 MB of additional disk space will be used.
+Get:1 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  libnccl-dev 2.32.6-1+cuda12.9 [212 MB]
+Get:2 https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2404/x86_64  libnccl2 2.32.6-1+cuda12.9 [222 MB]
+Fetched 434 MB in 5s (94.7 MB/s)
+dpkg: warning: downgrading libnccl-dev from 2.32.6-1+cuda13.5 to 2.32.6-1+cuda12.9
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 149986 files and directories currently installed.)
+Preparing to unpack .../libnccl-dev_2.32.6-1+cuda12.9_amd64.deb ...
+Unpacking libnccl-dev (2.32.6-1+cuda12.9) over (2.32.6-1+cuda13.5) ...
+dpkg: warning: downgrading libnccl2 from 2.32.6-1+cuda13.5 to 2.32.6-1+cuda12.9
+Preparing to unpack .../libnccl2_2.32.6-1+cuda12.9_amd64.deb ...
+Unpacking libnccl2 (2.32.6-1+cuda12.9) over (2.32.6-1+cuda13.5) ...
+Setting up libnccl2 (2.32.6-1+cuda12.9) ...
+Setting up libnccl-dev (2.32.6-1+cuda12.9) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.12) ...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ ubuntu @ session #1: sshd[1327,1446]
+ ubuntu @ user manager service: systemd[1333]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.

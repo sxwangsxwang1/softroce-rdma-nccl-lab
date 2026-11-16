@@ -1,0 +1,11 @@
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+
+# Preserve exact bytes in evidence on every platform, including terminal CR sequences.
+data/raw/** -text -whitespace
+*.pcap binary
+*.png binary
+
+# Matplotlib emits trailing spaces inside SVG path data.
+results/figures/*.svg text eol=lf -whitespace

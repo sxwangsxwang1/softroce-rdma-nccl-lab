@@ -1,0 +1,2 @@
+# Optional: only needed to regenerate figures. Data extraction uses the standard library.
+matplotlib==3.11.2

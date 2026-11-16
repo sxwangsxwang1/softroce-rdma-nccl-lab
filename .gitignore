@@ -1,0 +1,11 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.local/
+runs/
+
+# Original handoff material stays local; corrected documents and extracted logs are published.
+/SoftRoCE_实验方案.md
+/softroce-implementation-report.md
+/roce-lab-logs_*.tar.gz

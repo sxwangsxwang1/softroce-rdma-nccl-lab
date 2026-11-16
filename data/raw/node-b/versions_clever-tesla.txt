@@ -1,0 +1,10 @@
+== clever-tesla Sun Nov 15 16:05:23 UTC 2026 ==
+6.14.0-37-generic
+Cuda compilation tools, release 12.8, V12.8.93
+libibverbs1:amd64 50.0-2ubuntu0.2
+perftest 24.01.0+0.38-1build2
+rdma-core 50.0-2ubuntu0.2
+libnccl-dev 2.32.6-1+cuda13.5
+libnccl2 2.32.6-1+cuda13.5
+openmpi-bin 4.1.6-7ubuntu2
+mpirun (Open MPI) 4.1.6

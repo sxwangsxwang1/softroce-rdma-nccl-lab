@@ -1,0 +1,313 @@
+{
+  "experiment_date": "2026-11-15",
+  "files": [
+    {
+      "path": "data/raw/node-a/apt_nccl_swap_brilliant-franklin.txt",
+      "bytes": 2196,
+      "sha256": "f52ab8ca3c79b3547002cfb80357e52826413ced2629c94ace1aab07fe6ef8f3",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/apt_nccl_swap_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/apt_s5_brilliant-franklin.txt",
+      "bytes": 33976,
+      "sha256": "b7572194b65051800c71a98abf2683a604c28b310bd4b5e2ba10cbb9e888a18c",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/apt_s5_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/apt_update_s5_brilliant-franklin.txt",
+      "bytes": 611,
+      "sha256": "d7e01c64cc790dbe48e99b99ca719efa3239acfd5aae236ddcf38fd3bd563c0f",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/apt_update_s5_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/cpu_during_ib_write_bw.txt",
+      "bytes": 2835,
+      "sha256": "47507b2e1ad53308620a683b4f719b48316f59b810d596a29cc0b0d470537ed8",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/cpu_during_ib_write_bw.txt"
+    },
+    {
+      "path": "data/raw/node-a/env_brilliant-franklin.txt",
+      "bytes": 399,
+      "sha256": "e60315ccb8acc70e11eb0ce82a614226deacbb48693c806d6e9094195786516e",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/env_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/gids_brilliant-franklin.txt",
+      "bytes": 126,
+      "sha256": "6d53ad8df403115409113cded76e12eb88c95e145c36f692c313327ed0a268ef",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/gids_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/git_clone_brilliant-franklin.txt",
+      "bytes": 29,
+      "sha256": "b580aa4511c7485d5c5807fedc4b57437549ba1d643ecada072845ca4c6612e1",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/git_clone_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/ib_write_bw_q4_server.txt",
+      "bytes": 2127,
+      "sha256": "e81d8ba4d93fd2cdbfdef173fab1c799e65147ec39d558682f4ed2bd2438fa31",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/ib_write_bw_q4_server.txt"
+    },
+    {
+      "path": "data/raw/node-a/ib_write_bw_server.txt",
+      "bytes": 1288,
+      "sha256": "512f2f4706f6b95a81466aae077b6e91227a262c35f0302637f7be10bebe528f",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/ib_write_bw_server.txt"
+    },
+    {
+      "path": "data/raw/node-a/ib_write_lat_server.txt",
+      "bytes": 3770,
+      "sha256": "5b68cd9680711639cee6b2675da1d41596e01fa2a26253da6651c0b9ce94942d",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/ib_write_lat_server.txt"
+    },
+    {
+      "path": "data/raw/node-a/ibv_devinfo_brilliant-franklin.txt",
+      "bytes": 2344,
+      "sha256": "e3c70d0cdac681d73964ceb3602c527591fa4608924bba688f4ae92eaeb6b2c9",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/ibv_devinfo_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/iperf3_server.txt",
+      "bytes": 16210,
+      "sha256": "aecd06f2d5e62c48f35f00f2324d9e98f8c435a92863cee21b282033b044b3eb",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/iperf3_server.txt"
+    },
+    {
+      "path": "data/raw/node-a/nccl_allreduce_rdma.txt",
+      "bytes": 20025,
+      "sha256": "9237ab84e3c71851acaf9c4267edd6305ffac0c02bc119070e5c36e1558caf55",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/nccl_allreduce_rdma.txt"
+    },
+    {
+      "path": "data/raw/node-a/nccl_allreduce_socket.txt",
+      "bytes": 16592,
+      "sha256": "53c4083512bec755accf045a179503ad8f36f6cbb6acff52bd7bf456390b80b4",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/nccl_allreduce_socket.txt"
+    },
+    {
+      "path": "data/raw/node-a/nccl_single_node_smoke.txt",
+      "bytes": 3680,
+      "sha256": "7dc30f77ce0236aad2d5e89289677c16afe4b9015f66b29e9d04fa0972042bc7",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/nccl_single_node_smoke.txt"
+    },
+    {
+      "path": "data/raw/node-a/nccl_tests_build_brilliant-franklin.txt",
+      "bytes": 47669,
+      "sha256": "19b0690b634a0f83258d0f4d2b6e389c41ce2aba8afeb7ec807fee93ff69ea4e",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/nccl_tests_build_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/nvidia_brilliant-franklin.txt",
+      "bytes": 1778,
+      "sha256": "27132b3c81f3f4ac9c7cee5b2b9c3715f454a4ce85aaaecf08ddd7b33d92a4f1",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/nvidia_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-a/rc_pingpong_server.txt",
+      "bytes": 254,
+      "sha256": "c5bd08bbfc0d0d69e3472e0f2d70abcc64c2cc7e3a40d481de5e33613e5e8ce4",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/rc_pingpong_server.txt"
+    },
+    {
+      "path": "data/raw/node-a/roce_v2.pcap",
+      "bytes": 178824,
+      "sha256": "1c7042349d57d30ccf96a9205ab4062c104309858d2d0efc40391a85ae1d6740",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/roce_v2.pcap"
+    },
+    {
+      "path": "data/raw/node-a/roce_v2_head.txt",
+      "bytes": 1432,
+      "sha256": "b0574380a93b6b567429430a9348683dd609adf130687593373667f139dd8d3a",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/roce_v2_head.txt"
+    },
+    {
+      "path": "data/raw/node-a/rping_server.txt",
+      "bytes": 879,
+      "sha256": "75a430a783e30c16e07dee9841cf0d9e1b0533cebb574158bfb43949e1cbe081",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/rping_server.txt"
+    },
+    {
+      "path": "data/raw/node-a/ssh_mesh_test.txt",
+      "bytes": 190,
+      "sha256": "e69cbb5e296935a8fde72b017e98ae672509ef492b8f0123e654b7d04ccc317c",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/ssh_mesh_test.txt"
+    },
+    {
+      "path": "data/raw/node-a/versions_brilliant-franklin.txt",
+      "bytes": 317,
+      "sha256": "984a2308743254cc1d0586b3eca7ba19605ec4247bef4c74ff2d789b2f8577eb",
+      "source_archive": "roce-lab-logs_brilliant-franklin.tar.gz",
+      "source_member": "logs/versions_brilliant-franklin.txt"
+    },
+    {
+      "path": "data/raw/node-b/apt_install_clever-tesla.txt",
+      "bytes": 6267,
+      "sha256": "69ece0aa8080de445cfea2374d48a639a7ad6b2a1358c21ad1c46fa8dfb09a10",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/apt_install_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/apt_nccl_swap_clever-tesla.txt",
+      "bytes": 2440,
+      "sha256": "1b3facbbec9c422f62156d2055c56ae7df9d12df2749ad5e8ec6062facf0a13c",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/apt_nccl_swap_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/apt_s5_clever-tesla.txt",
+      "bytes": 209967,
+      "sha256": "d7ecdd47aebdfcb78144c818b8c4b424d4d23f1df73a3245c3c5017b0eea1f0c",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/apt_s5_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/apt_update_clever-tesla.txt",
+      "bytes": 5082,
+      "sha256": "c1cd120275348e3778588bda37cd4565c8f5dd2ab151ce5345d9320e80bef864",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/apt_update_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/apt_update_s5_clever-tesla.txt",
+      "bytes": 611,
+      "sha256": "462cbc570e1ec297af7ca8afa74b69324fb4b702fe6e003aa265944ea951b96e",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/apt_update_s5_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/cpu_during_ib_write_bw_client.txt",
+      "bytes": 2835,
+      "sha256": "d9e0b4c98502acaad3e2cd7e8932b507b956c1f636d34545d516666815967ee0",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/cpu_during_ib_write_bw_client.txt"
+    },
+    {
+      "path": "data/raw/node-b/env_clever-tesla.txt",
+      "bytes": 339,
+      "sha256": "58313bbbc9a02f9252277f1557ee64ba76746e3870399c5596456b51a03a6e5a",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/env_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/gids_clever-tesla.txt",
+      "bytes": 126,
+      "sha256": "b8ab91f3309367999d32bc39c30d3183ceb7b743d5f5058a183b2574cffbf5df",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/gids_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/git_clone_clever-tesla.txt",
+      "bytes": 29,
+      "sha256": "b580aa4511c7485d5c5807fedc4b57437549ba1d643ecada072845ca4c6612e1",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/git_clone_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/ib_write_bw_client.txt",
+      "bytes": 2766,
+      "sha256": "b3e7e693b97a35c1548d3a5a8b41eeb5e439ba2c2314ac83842e49046b99f7e2",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/ib_write_bw_client.txt"
+    },
+    {
+      "path": "data/raw/node-b/ib_write_bw_q4_client.txt",
+      "bytes": 3487,
+      "sha256": "f74c17e8377f784cfdb896781de237c3e6346aa78833399441eb9917f56b5f36",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/ib_write_bw_q4_client.txt"
+    },
+    {
+      "path": "data/raw/node-b/ib_write_lat_client.txt",
+      "bytes": 3679,
+      "sha256": "a98c04c77e7e6ccb54473c06c4fe221c6db1dea629c1e373c687baf5b48145e3",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/ib_write_lat_client.txt"
+    },
+    {
+      "path": "data/raw/node-b/ibv_devinfo_clever-tesla.txt",
+      "bytes": 2344,
+      "sha256": "a0136322618afefbd8a064813ca7cff456fe6a836e6c66ab44e00eda087fcbeb",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/ibv_devinfo_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/iperf3_1stream.txt",
+      "bytes": 2823,
+      "sha256": "5d26a43d3e7604022d5050c5d00e380aaf9c8f71c5ee6e7453775fa6e94c27af",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/iperf3_1stream.txt"
+    },
+    {
+      "path": "data/raw/node-b/iperf3_4stream.txt",
+      "bytes": 14341,
+      "sha256": "13d3a8e8c80ebae9ec4e6c8558aad6996f8c41219288c7204e17038d256e6edb",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/iperf3_4stream.txt"
+    },
+    {
+      "path": "data/raw/node-b/nccl_tests_build_clever-tesla.txt",
+      "bytes": 44920,
+      "sha256": "7d3f9f32ad78fb91dab7aadbcd069f67affa3abeade30dd38ed24de26d3221d1",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/nccl_tests_build_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/nvidia_clever-tesla.txt",
+      "bytes": 1778,
+      "sha256": "962028a51aca896d8b2493fc3dbfcbb3ab46d64ef38f6d2f1340f3fd36b0f035",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/nvidia_clever-tesla.txt"
+    },
+    {
+      "path": "data/raw/node-b/ping_to_A.txt",
+      "bytes": 372,
+      "sha256": "2818e6065195841004bd4d5103400958d47c6efd65f3c0b6f6fa96b482d3754e",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/ping_to_A.txt"
+    },
+    {
+      "path": "data/raw/node-b/rc_pingpong_client.txt",
+      "bytes": 254,
+      "sha256": "a3e50be91240079880a41ad335feccd93e8eca1104cdfc84bb7556ed81fa69fa",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/rc_pingpong_client.txt"
+    },
+    {
+      "path": "data/raw/node-b/rping_client.txt",
+      "bytes": 750,
+      "sha256": "56e332641e5dae3baa3f7c77f0ea5643792edbf27b3c226a49a56519f1cb995b",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/rping_client.txt"
+    },
+    {
+      "path": "data/raw/node-b/versions_clever-tesla.txt",
+      "bytes": 311,
+      "sha256": "1fed637b17d08c2b76f682e15e09fb919cfa5786f8ca16e19e104524c16e439f",
+      "source_archive": "roce-lab-logs_clever-tesla.tar.gz",
+      "source_member": "logs/versions_clever-tesla.txt"
+    }
+  ]
+}

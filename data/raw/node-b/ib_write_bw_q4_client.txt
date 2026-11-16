@@ -1,0 +1,58 @@
+---------------------------------------------------------------------------------------
+                    RDMA_Write BW Test
+ Dual-port       : OFF		Device         : rxe0
+ Number of qps   : 4		Transport type : IB
+ Connection type : RC		Using SRQ      : OFF
+ PCIe relax order: ON
+ ibv_wr* API     : OFF
+ TX depth        : 128
+ CQ Moderation   : 100
+ Mtu             : 4096[B]
+ Link type       : Ethernet
+ GID index       : 1
+ Max inline data : 0[B]
+ rdma_cm QPs	 : OFF
+ Data ex. method : Ethernet
+---------------------------------------------------------------------------------------
+ local address: LID 0000 QPN 0x001b PSN 0x80a987 RKey 0x00123d VAddr 0x007ae1372a0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ local address: LID 0000 QPN 0x001c PSN 0xc9559c RKey 0x00123d VAddr 0x007ae137aa0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ local address: LID 0000 QPN 0x001d PSN 0x6ea980 RKey 0x00123d VAddr 0x007ae1382a0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ local address: LID 0000 QPN 0x001e PSN 0x175798 RKey 0x00123d VAddr 0x007ae138aa0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ remote address: LID 0000 QPN 0x001a PSN 0x6caac7 RKey 0x000dba VAddr 0x007d6de1988000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ remote address: LID 0000 QPN 0x001b PSN 0xeeeaa5 RKey 0x000dba VAddr 0x007d6de2188000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ remote address: LID 0000 QPN 0x001c PSN 0x17a78b RKey 0x000dba VAddr 0x007d6de2988000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ remote address: LID 0000 QPN 0x001d PSN 0xe3d77e RKey 0x000dba VAddr 0x007d6de3188000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+---------------------------------------------------------------------------------------
+ #bytes     #iterations    BW peak[Gb/sec]    BW average[Gb/sec]   MsgRate[Mpps]
+ 2          20000           0.001208            0.001156            0.072263
+ 4          20000           0.002534            0.002171            0.067848
+ 8          20000           0.004953            0.004580            0.071565
+ 16         20000           0.010255            0.009614            0.075107
+ 32         20000           0.019515            0.018514            0.072319
+ 64         20000           0.039074            0.034178            0.066755
+ 128        20000           0.080885            0.075695            0.073921
+ 256        20000            0.15               0.14   		   0.066695
+ 512        20000            0.30               0.28   		   0.068613
+ 1024       20000            0.62               0.53   		   0.064195
+ 2048       20000            1.10               1.05   		   0.063786
+ 4096       20000            1.98               1.75   		   0.053283
+ 8192       20000            2.05               1.90   		   0.028923
+ 16384      20000            2.13               1.97   		   0.015037
+ 32768      20000            2.17               2.04   		   0.007784
+ 65536      20000            2.15               2.13   		   0.004069
+ 131072     20000            2.33               2.24   		   0.002139
+ 262144     20000            2.29               2.23   		   0.001063
+ 524288     20000            2.92               2.47   		   0.000589
+ 1048576    20000            2.98               2.96   		   0.000353 Completion with error at client
+ Failed status 5: wr_id 0 syndrom 0x0
+scnt=19012, ccnt=18500
+ Failed to complete run_iter_bw function successfully
+

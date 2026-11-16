@@ -1,0 +1,527 @@
+make -C src build BUILDDIR=/home/ubuntu/nccl-tests/build
+make[1]: Entering directory '/home/ubuntu/nccl-tests/src'
+make[2]: Entering directory '/home/ubuntu/nccl-tests/os'
+Compiling  timer.cc                            > /home/ubuntu/nccl-tests/build/timer.o
+Compiling /home/ubuntu/nccl-tests/build/verifiable/verifiable.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  all_reduce.cu                       > /home/ubuntu/nccl-tests/build/all_reduce.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  linux.cc                            > /home/ubuntu/nccl-tests/build/os/linux.o
+Compiling  common.cu                           > /home/ubuntu/nccl-tests/build/common.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Creating archive /home/ubuntu/nccl-tests/build/os/linux.o > /home/ubuntu/nccl-tests/build/os/libnccl_test_os.a
+make[2]: Leaving directory '/home/ubuntu/nccl-tests/os'
+Compiling  all_gather.cu                       > /home/ubuntu/nccl-tests/build/all_gather.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  broadcast.cu                        > /home/ubuntu/nccl-tests/build/broadcast.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  reduce_scatter.cu                   > /home/ubuntu/nccl-tests/build/reduce_scatter.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  reduce.cu                           > /home/ubuntu/nccl-tests/build/reduce.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  alltoall.cu                         > /home/ubuntu/nccl-tests/build/alltoall.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  alltoallv.cu                        > /home/ubuntu/nccl-tests/build/alltoallv.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  scatter.cu                          > /home/ubuntu/nccl-tests/build/scatter.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  gather.cu                           > /home/ubuntu/nccl-tests/build/gather.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  sendrecv.cu                         > /home/ubuntu/nccl-tests/build/sendrecv.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  hypercube.cu                        > /home/ubuntu/nccl-tests/build/hypercube.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  comm_ops.cu                         > /home/ubuntu/nccl-tests/build/comm_ops.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginGetLatency_ping_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginGetLatency_ping_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginGetLatency_ping.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginGetLatency_ping.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutCounterLatency_ping.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutCounterLatency_ping.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutCounterLatency_ping.cu(29): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (skipCreditCheck) {
+         ^
+          detected during instantiation of "void ginPutCounterLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 56
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutCounterLatency_ping.cu(29): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (skipCreditCheck) {
+         ^
+          detected during instantiation of "void ginPutCounterLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 56
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutCounterLatency_ping.cu(29): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (skipCreditCheck) {
+         ^
+          detected during instantiation of "void ginPutCounterLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 56
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_ping.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_ping.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutCounterLatency_ping.cu(29): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (skipCreditCheck) {
+         ^
+          detected during instantiation of "void ginPutCounterLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 56
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutCounterLatency_ping.cu(29): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (skipCreditCheck) {
+         ^
+          detected during instantiation of "void ginPutCounterLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 56
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_pingPong.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (skipCreditCheck) {
+           ^
+          detected during instantiation of "void ginPutLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 70
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (skipCreditCheck) {
+           ^
+          detected during instantiation of "void ginPutLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 70
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (skipCreditCheck) {
+           ^
+          detected during instantiation of "void ginPutLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 70
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (skipCreditCheck) {
+           ^
+          detected during instantiation of "void ginPutLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 70
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (skipCreditCheck) {
+           ^
+          detected during instantiation of "void ginPutLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 70
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_ping.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutSignalLatency_ping.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_ping.cu(23): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginPutSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 55
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_ping.cu(23): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginPutSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 55
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_ping.cu(23): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginPutSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 55
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_ping.cu(23): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginPutSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 55
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_ping.cu(23): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginPutSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 55
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_pingPong.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutSignalLatency_pingPong.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_pingPong.cu(30): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginPutSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 80
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginSignalLatency_ping.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginSignalLatency_pingPong.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping.cu(20): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 52
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong.cu(26): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 76
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping.cu(20): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 52
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_pingPong.cu(30): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginPutSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 80
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong.cu(26): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 76
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping.cu(20): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 52
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping.cu(20): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 52
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_pingPong.cu(30): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginPutSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 80
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong.cu(26): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 76
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping.cu(20): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (strongSignal) {
+         ^
+          detected during instantiation of "void ginSignalLatencyPingLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 52
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_pingPong.cu(30): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginPutSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 80
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/utils/args.cc > /home/ubuntu/nccl-tests/build/device_api/gin/utils/args.o
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/utils/common.cc > /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/utils/gin_context.cc > /home/ubuntu/nccl-tests/build/device_api/gin/utils/gin_context.o
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_pingPong_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_pingPong_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong.cu(26): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 76
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutLatency_ping_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_ping_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong.cu(26): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 76
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/latency/ginPutSignalLatency_pingPong.cu(30): warning #2912-D: constexpr if statements are a C++17 feature
+        if constexpr (strongSignal) {
+           ^
+          detected during instantiation of "void ginPutSignalLatencyPingPongLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_THREAD]" at line 80
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_pingPong_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginSignalLatency_pingPong_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/latency/ginSignalLatency_ping_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginSignalLatency_ping_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginGetBW_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginGetBW.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW.cu(33): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginGetBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 84
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginPutBW.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutCounterBW.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginPutCounterBW.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutSignalBW.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginPutSignalBW.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 87
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutCounterBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutCounterBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 83
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutSignalBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 108
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutCounterBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutCounterBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 83
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutSignalBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 108
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutCounterBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutCounterBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 83
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW.cu(33): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginGetBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 84
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutCounterBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutCounterBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 83
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutSignalBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 108
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 87
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutCounterBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutCounterBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 83
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutSignalBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 108
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginSignalBW.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW.cu(27): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 99
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW.cu(33): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginGetBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 84
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutSignalBW.cu(35): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 108
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW.cu(27): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 99
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW.cu(27): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 99
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginPutBW_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 87
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW.cu(27): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 99
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW.cu(33): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginGetBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 84
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  /home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW_main.cu > /home/ubuntu/nccl-tests/build/device_api/gin/throughput/ginSignalBW_main.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginSignalBW.cu(27): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginSignalBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 99
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Compiling  util.cu                             > /home/ubuntu/nccl-tests/build/util.o
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 87
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+Linking  /home/ubuntu/nccl-tests/build/all_gather.o > /home/ubuntu/nccl-tests/build/all_gather_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/broadcast.o > /home/ubuntu/nccl-tests/build/broadcast_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/reduce_scatter.o > /home/ubuntu/nccl-tests/build/reduce_scatter_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/reduce.o > /home/ubuntu/nccl-tests/build/reduce_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/alltoall.o > /home/ubuntu/nccl-tests/build/alltoall_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/alltoallv.o > /home/ubuntu/nccl-tests/build/alltoallv_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/scatter.o > /home/ubuntu/nccl-tests/build/scatter_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/gather.o > /home/ubuntu/nccl-tests/build/gather_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/sendrecv.o > /home/ubuntu/nccl-tests/build/sendrecv_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/hypercube.o > /home/ubuntu/nccl-tests/build/hypercube_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/comm_ops.o > /home/ubuntu/nccl-tests/build/comm_ops_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Archiving  latency                             > /home/ubuntu/nccl-tests/build/device_api/gin/latency/libginPerflatency.a
+Linking  /home/ubuntu/nccl-tests/build/all_reduce.o > /home/ubuntu/nccl-tests/build/all_reduce_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginGetLatency_ping_main.o > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginGetLatency_ping_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+Linking  /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_pingPong_main.o > /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_pingPong_perf
+nvcc warning : Support for offline compilation for architectures prior to '<compute/sm/lto>_75' will be removed in a future release (Use -Wno-deprecated-gpu-targets to suppress warning).
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o: in function `MPI::Op::Init(void (*)(void const*, void*, int, MPI::Datatype const&), bool)':
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:(.text._ZN3MPI2Op4InitEPFvPKvPviRKNS_8DatatypeEEb[_ZN3MPI2Op4InitEPFvPKvPviRKNS_8DatatypeEEb]+0x1d): undefined reference to `ompi_mpi_cxx_op_intercept'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o: in function `MPI::Intracomm::Intracomm(ompi_communicator_t*)':
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:23:(.text._ZNK3MPI9Intracomm5CloneEv[_ZNK3MPI9Intracomm5CloneEv]+0x3e): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o: in function `MPI::Intracomm::Intracomm()':
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI9Graphcomm5CloneEv[_ZNK3MPI9Graphcomm5CloneEv]+0x39): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI8Cartcomm3SubEPKb[_ZNK3MPI8Cartcomm3SubEPKb]+0x96): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI9Intracomm12Create_graphEiPKiS2_b[_ZNK3MPI9Intracomm12Create_graphEiPKiS2_b]+0x3f): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI8Cartcomm5CloneEv[_ZNK3MPI8Cartcomm5CloneEv]+0x39): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o:/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25: more undefined references to `MPI::Comm::Comm()' follow
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o:(.data.rel.ro._ZTVN3MPI8DatatypeE[_ZTVN3MPI8DatatypeE]+0x78): undefined reference to `MPI::Datatype::Free()'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o:(.data.rel.ro._ZTVN3MPI3WinE[_ZTVN3MPI3WinE]+0x48): undefined reference to `MPI::Win::Free()'
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:246: /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginGetLatency_ping_perf] Error 1
+make[1]: *** Waiting for unfinished jobs....
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o: in function `MPI::Op::Init(void (*)(void const*, void*, int, MPI::Datatype const&), bool)':
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/op_inln.h:121:(.text._ZN3MPI2Op4InitEPFvPKvPviRKNS_8DatatypeEEb[_ZN3MPI2Op4InitEPFvPKvPviRKNS_8DatatypeEEb]+0x1d): undefined reference to `ompi_mpi_cxx_op_intercept'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o: in function `MPI::Intracomm::Intracomm(ompi_communicator_t*)':
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm_inln.h:23:(.text._ZNK3MPI9Intracomm5CloneEv[_ZNK3MPI9Intracomm5CloneEv]+0x3e): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o: in function `MPI::Intracomm::Intracomm()':
+/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI9Graphcomm5CloneEv[_ZNK3MPI9Graphcomm5CloneEv]+0x39): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI8Cartcomm3SubEPKb[_ZNK3MPI8Cartcomm3SubEPKb]+0x96): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI9Intracomm12Create_graphEiPKiS2_b[_ZNK3MPI9Intracomm12Create_graphEiPKiS2_b]+0x3f): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25:(.text._ZNK3MPI8Cartcomm5CloneEv[_ZNK3MPI8Cartcomm5CloneEv]+0x39): undefined reference to `MPI::Comm::Comm()'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o:/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi/ompi/mpi/cxx/intracomm.h:25: more undefined references to `MPI::Comm::Comm()' follow
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o:(.data.rel.ro._ZTVN3MPI8DatatypeE[_ZTVN3MPI8DatatypeE]+0x78): undefined reference to `MPI::Datatype::Free()'
+/usr/bin/ld: /home/ubuntu/nccl-tests/build/device_api/gin/utils/common.o:(.data.rel.ro._ZTVN3MPI3WinE[_ZTVN3MPI3WinE]+0x48): undefined reference to `MPI::Win::Free()'
+collect2: error: ld returned 1 exit status
+make[1]: *** [Makefile:246: /home/ubuntu/nccl-tests/build/device_api/gin/latency/ginPutLatency_pingPong_perf] Error 1
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginGetBW.cu(33): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginGetBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 84
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+/home/ubuntu/nccl-tests/src/device_api/gin/throughput/ginPutBW.cu(34): warning #2912-D: constexpr if statements are a C++17 feature
+      if constexpr (aggregateRequests) {
+         ^
+          detected during instantiation of "void ginPutBWLaunchRsm<rsm>(const ginContext_t *, cudaStream_t, const ginArgs_t *, size_t, int) [with rsm=NCCL_GIN_RESOURCE_SHARING_CTA]" at line 87
+
+Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+
+make[1]: Leaving directory '/home/ubuntu/nccl-tests/src'
+make: *** [Makefile:20: src.build] Error 2

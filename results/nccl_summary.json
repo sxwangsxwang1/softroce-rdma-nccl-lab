@@ -1,0 +1,8 @@
+{
+  "reported_scan_average_busbw_GBps": {
+    "rdma": 0.0765298,
+    "socket": 0.204685
+  },
+  "socket_over_rdma_scan_average": 2.674579052865681,
+  "note": "Tool-reported average across message sizes and both buffer modes; not a repeated-run statistic."
+}

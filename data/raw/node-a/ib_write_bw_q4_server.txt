@@ -1,0 +1,40 @@
+ethernet_read_keys: Couldn't read remote address
+ Unable to read to socket/rdma_cm
+ Failed to exchange data between server and clients
+
+************************************
+* Waiting for client to connect... *
+************************************
+---------------------------------------------------------------------------------------
+                    RDMA_Write BW Test
+ Dual-port       : OFF		Device         : rxe0
+ Number of qps   : 4		Transport type : IB
+ Connection type : RC		Using SRQ      : OFF
+ PCIe relax order: ON
+ ibv_wr* API     : OFF
+ CQ Moderation   : 100
+ Mtu             : 4096[B]
+ Link type       : Ethernet
+ GID index       : 1
+ Max inline data : 0[B]
+ rdma_cm QPs	 : OFF
+ Data ex. method : Ethernet
+---------------------------------------------------------------------------------------
+ local address: LID 0000 QPN 0x001a PSN 0x6caac7 RKey 0x000dba VAddr 0x007d6de1988000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ local address: LID 0000 QPN 0x001b PSN 0xeeeaa5 RKey 0x000dba VAddr 0x007d6de2188000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ local address: LID 0000 QPN 0x001c PSN 0x17a78b RKey 0x000dba VAddr 0x007d6de2988000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ local address: LID 0000 QPN 0x001d PSN 0xe3d77e RKey 0x000dba VAddr 0x007d6de3188000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:163
+ remote address: LID 0000 QPN 0x001b PSN 0x80a987 RKey 0x00123d VAddr 0x007ae1372a0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ remote address: LID 0000 QPN 0x001c PSN 0xc9559c RKey 0x00123d VAddr 0x007ae137aa0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ remote address: LID 0000 QPN 0x001d PSN 0x6ea980 RKey 0x00123d VAddr 0x007ae1382a0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+ remote address: LID 0000 QPN 0x001e PSN 0x175798 RKey 0x00123d VAddr 0x007ae138aa0000
+ GID: 00:00:00:00:00:00:00:00:00:00:255:255:10:00:00:103
+---------------------------------------------------------------------------------------
+ #bytes     #iterations    BW peak[Gb/sec]    BW average[Gb/sec]   MsgRate[Mpps]

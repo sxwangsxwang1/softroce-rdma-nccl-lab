@@ -1,0 +1,6 @@
+Linux brilliant-franklin 6.14.0-37-generic #37~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Nov 20 10:25:38 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+rdma_rxe              192512  0
+ib_uverbs             188416  2 rdma_rxe,rdma_ucm
+ip6_udp_tunnel         16384  1 rdma_rxe
+udp_tunnel             32768  1 rdma_rxe
+ib_core               516096  8 rdma_cm,rdma_rxe,rpcrdma,iw_cm,ib_iser,rdma_ucm,ib_uverbs,ib_cm

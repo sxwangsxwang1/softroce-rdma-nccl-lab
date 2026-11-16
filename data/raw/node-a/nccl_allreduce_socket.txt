@@ -1,0 +1,172 @@
+# nccl-tests version 2.21.1 (afd59ab) nccl-headers=23206 nccl-library=23206
+# Collective test starting: all_reduce_perf
+# nThread 1 nGpus 1 minBytes 8 maxBytes 268435456 step: 2(factor) warmup iters: 1 iters: 20 agg iters: 1 validation: 1 graph: 0 unalign: 0
+#
+# Using devices
+#  Rank  0 Group  0 Pid  12749 on brilliant-franklin device  0 [0000:00:06] NVIDIA RTX A4000
+#  Rank  1 Group  0 Pid  78364 on clever-tesla device  0 [0000:00:06] NVIDIA RTX A4000
+brilliant-franklin:12749:12749 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+brilliant-franklin:12749:12749 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ens3
+brilliant-franklin:12749:12749 [0] NCCL INFO cudaDriverVersion 12080
+brilliant-franklin:12749:12749 [0] NCCL INFO NCCL version 2.32.6+cuda12.9
+brilliant-franklin:12749:12749 [0] NCCL INFO NCCL git version unknown unknown
+clever-tesla:78364:78364 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+clever-tesla:78364:78364 [0] NCCL INFO cudaDriverVersion 12080
+clever-tesla:78364:78364 [0] NCCL INFO NCCL_SOCKET_IFNAME set to ens3
+clever-tesla:78364:78364 [0] NCCL INFO NCCL version 2.32.6+cuda12.9
+clever-tesla:78364:78364 [0] NCCL INFO NCCL git version unknown unknown
+brilliant-franklin:12749:12749 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+brilliant-franklin:12749:12749 [0] NCCL INFO transport/net_ib/init.cc:691 (ncclIbInit) -> 3
+
+[2026-11-15 17:44:51] brilliant-franklin:12749:12749 [0] plugin/net.cc:229 (ncclNetPluginInit) NCCL ATTN Failed to initialize NET plugin IB
+brilliant-franklin:12749:12749 [0] NCCL INFO NET/Socket : Using [0]ens3:10.0.0.163<0>
+brilliant-franklin:12749:12749 [0] NCCL INFO Initialized NET plugin Socket
+brilliant-franklin:12749:12749 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+brilliant-franklin:12749:12749 [0] NCCL INFO Assigned NET plugin Socket to comm
+brilliant-franklin:12749:12749 [0] NCCL INFO RMA/Plugin: Could not find: libnccl-rma.so
+
+[2026-11-15 17:44:51] brilliant-franklin:12749:12749 [0] misc/ibvwrap.cc:190 (wrap_ibv_alloc_pd) NCCL WARN lib wrapper not initialized.
+brilliant-franklin:12749:12749 [0] NCCL INFO transport/net_ib/gdr.cc:55 (ibDmaBufSupportInitOnce) -> 3
+brilliant-franklin:12749:12749 [0] NCCL INFO Unable to use GIN: Peermem is not supported, nor DMA-BUF.
+brilliant-franklin:12749:12749 [0] NCCL INFO RMA/Plugin: Failed to initialize plugin 
+
+[2026-11-15 17:44:51] brilliant-franklin:12749:12749 [0] transport/rma_socket.cc:32 (ncclRmaSocketProxyInit) NCCL WARN RMA/Socket : rma_socket requires GDRCopy; and GDR Copy is not available
+brilliant-franklin:12749:12749 [0] NCCL INFO RMA/Plugin: Failed to initialize plugin 
+brilliant-franklin:12749:12749 [0] NCCL INFO RMA/Plugin: Failed to initialize any plugin
+brilliant-franklin:12749:12749 [0] NCCL INFO GIN/Plugin: Could not find: libnccl-gin.so
+brilliant-franklin:12749:12749 [0] NCCL INFO GIN/Plugin: Failed to initialize any GIN plugin
+brilliant-franklin:12749:12749 [0] NCCL INFO Using network Socket
+brilliant-franklin:12749:12749 [0] NCCL INFO Loaded NVML from libnvidia-ml.so.1
+clever-tesla:78364:78364 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+clever-tesla:78364:78364 [0] NCCL INFO transport/net_ib/init.cc:691 (ncclIbInit) -> 3
+
+[2026-11-15 17:44:51] clever-tesla:78364:78364 [0] plugin/net.cc:229 (ncclNetPluginInit) NCCL ATTN Failed to initialize NET plugin IB
+clever-tesla:78364:78364 [0] NCCL INFO NET/Socket : Using [0]ens3:10.0.0.103<0>
+clever-tesla:78364:78364 [0] NCCL INFO Initialized NET plugin Socket
+clever-tesla:78364:78364 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+clever-tesla:78364:78364 [0] NCCL INFO Assigned NET plugin Socket to comm
+clever-tesla:78364:78364 [0] NCCL INFO RMA/Plugin: Could not find: libnccl-rma.so
+
+[2026-11-15 17:44:51] clever-tesla:78364:78364 [0] misc/ibvwrap.cc:190 (wrap_ibv_alloc_pd) NCCL WARN lib wrapper not initialized.
+clever-tesla:78364:78364 [0] NCCL INFO transport/net_ib/gdr.cc:55 (ibDmaBufSupportInitOnce) -> 3
+clever-tesla:78364:78364 [0] NCCL INFO Unable to use GIN: Peermem is not supported, nor DMA-BUF.
+clever-tesla:78364:78364 [0] NCCL INFO RMA/Plugin: Failed to initialize plugin 
+
+[2026-11-15 17:44:51] clever-tesla:78364:78364 [0] transport/rma_socket.cc:32 (ncclRmaSocketProxyInit) NCCL WARN RMA/Socket : rma_socket requires GDRCopy; and GDR Copy is not available
+clever-tesla:78364:78364 [0] NCCL INFO RMA/Plugin: Failed to initialize plugin 
+clever-tesla:78364:78364 [0] NCCL INFO RMA/Plugin: Failed to initialize any plugin
+clever-tesla:78364:78364 [0] NCCL INFO GIN/Plugin: Could not find: libnccl-gin.so
+clever-tesla:78364:78364 [0] NCCL INFO GIN/Plugin: Failed to initialize any GIN plugin
+clever-tesla:78364:78364 [0] NCCL INFO Using network Socket
+clever-tesla:78364:78364 [0] NCCL INFO Loaded NVML from libnvidia-ml.so.1
+clever-tesla:78364:78364 [0] NCCL INFO [Rank 1] ncclCommInitRankConfig comm 0x5717f6526c10 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 60 commId 0xcb5dbee44a67b2ee - Init START
+brilliant-franklin:12749:12749 [0] NCCL INFO [Rank 0] ncclCommInitRankConfig comm 0x61ebe6c5fe60 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 60 commId 0xcb5dbee44a67b2ee - Init START
+brilliant-franklin:12749:12749 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+clever-tesla:78364:78364 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+brilliant-franklin:12749:12749 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+brilliant-franklin:12749:12749 [0] NCCL INFO Topology detection: network path (name = ens3) /sys/devices/pci0000:00/0000:00:03.0/virtio1 is not a PCI device (virtio). Attaching to first CPU
+brilliant-franklin:12749:12749 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'ens3'
+clever-tesla:78364:78364 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+clever-tesla:78364:78364 [0] NCCL INFO Topology detection: network path (name = ens3) /sys/devices/pci0000:00/0000:00:03.0/virtio1 is not a PCI device (virtio). Attaching to first CPU
+clever-tesla:78364:78364 [0] NCCL INFO NET/Socket : GPU Direct RDMA Disabled for HCA 0 'ens3'
+brilliant-franklin:12749:12749 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is empty, ignoring. (GPU affinity =  ; CPU affinity = 0).
+brilliant-franklin:12749:12749 [0] NCCL INFO Rank 0: 1 Net devices
+brilliant-franklin:12749:12749 [0] NCCL INFO Rank 0: 0 CollNet devices
+clever-tesla:78364:78364 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is empty, ignoring. (GPU affinity =  ; CPU affinity = 0).
+clever-tesla:78364:78364 [0] NCCL INFO Rank 1: 1 Net devices
+clever-tesla:78364:78364 [0] NCCL INFO Rank 1: 0 CollNet devices
+brilliant-franklin:12749:12749 [0] NCCL INFO Local Net device counts across ranks: min 1 max 1
+brilliant-franklin:12749:12749 [0] NCCL INFO Local CollNet device counts across ranks: min 0 max 0
+brilliant-franklin:12749:12749 [0] NCCL INFO comm 0x61ebe6c5fe60 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+brilliant-franklin:12749:12749 [0] NCCL INFO Channel 00/02 : 0 1
+brilliant-franklin:12749:12749 [0] NCCL INFO Channel 01/02 : 0 1
+brilliant-franklin:12749:12749 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+brilliant-franklin:12749:12749 [0] NCCL INFO P2P Chunksize set to 131072
+brilliant-franklin:12749:12749 [0] NCCL INFO Simple Buffer Size set to 4194304
+brilliant-franklin:12749:12749 [0] NCCL INFO Tuning P2P operations with maxP2pPeers = 2
+brilliant-franklin:12749:12749 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+brilliant-franklin:12749:12749 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+clever-tesla:78364:78364 [0] NCCL INFO comm 0x5717f6526c10 rank 1 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+clever-tesla:78364:78364 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1
+clever-tesla:78364:78364 [0] NCCL INFO P2P Chunksize set to 131072
+clever-tesla:78364:78364 [0] NCCL INFO Simple Buffer Size set to 4194304
+clever-tesla:78364:78364 [0] NCCL INFO Tuning P2P operations with maxP2pPeers = 2
+clever-tesla:78364:78364 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+clever-tesla:78364:78364 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+brilliant-franklin:12749:12757 [0] NCCL INFO [Proxy Service] Device 0 CPU core 0
+brilliant-franklin:12749:12757 [0] NCCL INFO proxy listening socket at 10.0.0.163<42261>
+brilliant-franklin:12749:12758 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 0
+brilliant-franklin:12749:12749 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+brilliant-franklin:12749:12749 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+brilliant-franklin:12749:12749 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+brilliant-franklin:12749:12749 [0] NCCL INFO Rank 0 RMA strides: baseStride 0 userCtxStride 1 defaultUserStride 1 networkRmaSupport 0 (crossNic 1 contiguousRanksPerHost 1 numRmaCtx 1)
+brilliant-franklin:12749:12749 [0] NCCL INFO symmetricSupport 0, cuMemEnable 1, globalGinSupport 0, cuMemGdrSupport 1, contiguousRanksPerHost 1, crossNicSupport 1
+clever-tesla:78364:78364 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+clever-tesla:78364:78364 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+clever-tesla:78364:78364 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+clever-tesla:78364:78364 [0] NCCL INFO Rank 1 RMA strides: baseStride 0 userCtxStride 1 defaultUserStride 1 networkRmaSupport 0 (crossNic 1 contiguousRanksPerHost 1 numRmaCtx 1)
+clever-tesla:78364:78364 [0] NCCL INFO symmetricSupport 0, cuMemEnable 1, globalGinSupport 0, cuMemGdrSupport 1, contiguousRanksPerHost 1, crossNicSupport 1
+brilliant-franklin:12749:12749 [0] NCCL INFO CC Off, workFifoBytes 1048576
+brilliant-franklin:12749:12749 [0] NCCL INFO ncclCommInitRankConfig comm 0x61ebe6c5fe60 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId 60 commId 0xcb5dbee44a67b2ee - Init COMPLETE
+brilliant-franklin:12749:12749 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 0.25 (kernels 0.19, alloc 0.03, bootstrap 0.01, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.00, rest 0.00)
+clever-tesla:78364:78364 [0] NCCL INFO ncclCommInitRankConfig comm 0x5717f6526c10 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 60 commId 0xcb5dbee44a67b2ee - Init COMPLETE
+clever-tesla:78364:78364 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 2 total 0.24 (kernels 0.20, alloc 0.02, bootstrap 0.01, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.00, rest 0.00)
+clever-tesla:78364:78371 [0] NCCL INFO [Proxy Service] Device 0 CPU core 0
+clever-tesla:78364:78371 [0] NCCL INFO proxy listening socket at 10.0.0.103<56733>
+clever-tesla:78364:78372 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 0
+#
+#                                                              out-of-place                       in-place
+#       size         count      type   redop    root     time   algbw   busbw  #wrong     time   algbw   busbw  #wrong
+#        (B)    (elements)                               (us)  (GB/s)  (GB/s)             (us)  (GB/s)  (GB/s)        
+           8             2     float     sum      -1brilliant-franklin:12749:12759 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 0
+clever-tesla:78364:78373 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 0
+brilliant-franklin:12749:12757 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+brilliant-franklin:12749:12749 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+clever-tesla:78364:78371 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+clever-tesla:78364:78364 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/Socket/0
+brilliant-franklin:12749:12757 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+brilliant-franklin:12749:12749 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+clever-tesla:78364:78371 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+clever-tesla:78364:78364 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/Socket/0
+brilliant-franklin:12749:12757 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+brilliant-franklin:12749:12749 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+clever-tesla:78364:78371 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+clever-tesla:78364:78364 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/Socket/0
+brilliant-franklin:12749:12757 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+brilliant-franklin:12749:12749 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+clever-tesla:78364:78371 [0] NCCL INFO Could not get speed from /sys/class/net/ens3/speed. Defaulting to 10 Gbps.
+clever-tesla:78364:78364 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/Socket/0
+brilliant-franklin:12749:12749 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 0
+clever-tesla:78364:78364 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 0
+   254.43    0.00    0.00       0   235.03    0.00    0.00       0
+          16             4     float     sum      -1   244.73    0.00    0.00       0   230.79    0.00    0.00       0
+          32             8     float     sum      -1   232.26    0.00    0.00       0   239.38    0.00    0.00       0
+          64            16     float     sum      -1   237.44    0.00    0.00       0   240.51    0.00    0.00       0
+         128            32     float     sum      -1   244.96    0.00    0.00       0   233.16    0.00    0.00       0
+         256            64     float     sum      -1   265.94    0.00    0.00       0   272.80    0.00    0.00       0
+         512           128     float     sum      -1   292.33    0.00    0.00       0   307.25    0.00    0.00       0
+        1024           256     float     sum      -1   313.29    0.00    0.00       0   265.48    0.00    0.00       0
+        2048           512     float     sum      -1   307.66    0.01    0.01       0   320.60    0.01    0.01       0
+        4096          1024     float     sum      -1   348.06    0.01    0.01       0   336.23    0.01    0.01       0
+        8192          2048     float     sum      -1   369.22    0.02    0.02       0   364.70    0.02    0.02       0
+       16384          4096     float     sum      -1   522.09    0.03    0.03       0   507.37    0.03    0.03       0
+       32768          8192     float     sum      -1   590.36    0.06    0.06       0   593.17    0.06    0.06       0
+       65536         16384     float     sum      -1   816.83    0.08    0.08       0   844.00    0.08    0.08       0
+      131072         32768     float     sum      -1   988.03    0.13    0.13       0   988.96    0.13    0.13       0
+      262144         65536     float     sum      -1  1371.21    0.19    0.19       0  1357.54    0.19    0.19       0
+      524288        131072     float     sum      -1  1886.10    0.28    0.28       0  1926.96    0.27    0.27       0
+     1048576        262144     float     sum      -1  3010.33    0.35    0.35       0  3487.97    0.30    0.30       0
+     2097152        524288     float     sum      -1  4748.51    0.44    0.44       0  4531.07    0.46    0.46       0
+     4194304       1048576     float     sum      -1  8154.62    0.51    0.51       0  7787.41    0.54    0.54       0
+     8388608       2097152     float     sum      -1  14812.3    0.57    0.57       0  15571.1    0.54    0.54       0
+    16777216       4194304     float     sum      -1  34731.9    0.48    0.48       0  34449.9    0.49    0.49       0
+    33554432       8388608     float     sum      -1  61823.4    0.54    0.54       0  63665.0    0.53    0.53       0
+    67108864      16777216     float     sum      -1   138254    0.49    0.49       0   126540    0.53    0.53       0
+   134217728      33554432     float     sum      -1   254496    0.53    0.53       0   233543    0.57    0.57       0
+   268435456      67108864     float     sum      -1   471638    0.57    0.57       0   464961    0.58    0.58       0
+# Out of bounds values : 0 OK
+# Avg bus bandwidth    : 0.204685 
+#
+# Collective test concluded: all_reduce_perf
+#
+
