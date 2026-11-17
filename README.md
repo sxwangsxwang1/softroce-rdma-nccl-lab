@@ -6,7 +6,7 @@ Two cloud GPU VMs, a software RoCEv2 link, and an evidence trail from verbs to N
 
 This lab connects two Linux VMs with **Soft-RoCE (`rdma_rxe`)**, verifies the transport with packet headers and NCCL logs, and compares software RDMA with TCP on the same pair of machines. The recorded run completed on **November 15, 2026**.
 
-**Result:** NCCL used `NET/IB` over `rxe0` and passed validation. On this platform, TCP achieved higher throughput than Soft-RoCE in both the standalone throughput tests and the NCCL comparison. These are observations from one experimental session, with the original failures retained.
+**Result:** Soft-RoCE passed end-to-end validation; TCP delivered higher throughput on this platform. NCCL used `NET/IB` over `rxe0` with zero validation errors. Single-stream TCP throughput was about **3.2×** the highest per-size average RDMA Write throughput; at 256 MiB, out-of-place NCCL Socket busbw was **2.85×** RDMA busbw. These observations come from one experimental session, with the original failures retained.
 
 [Results](results/README.md) · [Reproduction guide](docs/reproduce.md) · [Evidence and corrections](docs/evidence.md) · [中文实验报告](docs/report-zh.md)
 
@@ -20,9 +20,10 @@ This lab connects two Linux VMs with **Soft-RoCE (`rdma_rxe`)**, verifies the tr
 | RDMA Write latency | **91.87 µs mean** at 2 B; **333.30 µs** at 64 KiB | [Client scan](data/raw/node-b/ib_write_lat_client.txt) |
 | TCP, 30 s | **9.76 Gb/s received** with 1 stream; **10.7 Gb/s** with 4 streams | [1 stream](data/raw/node-b/iperf3_1stream.txt), [4 streams](data/raw/node-b/iperf3_4stream.txt) |
 | NCCL AllReduce, 256 MiB, out-of-place | **0.20 GB/s** busbw via RDMA; **0.57 GB/s** via Socket | [RDMA](data/raw/node-a/nccl_allreduce_rdma.txt), [Socket](data/raw/node-a/nccl_allreduce_socket.txt) |
+| NCCL AllReduce, reported scan-average busbw | **0.077 GB/s** via RDMA; **0.205 GB/s** via Socket | [Summary](results/nccl_summary.json), [Full CSV](results/nccl_allreduce.csv) |
 | NCCL validation | Both transports: all `#wrong` counts zero; `Out of bounds values : 0 OK` | Same NCCL logs |
 
-`Gb/s` means gigabits per second; `GB/s` means gigabytes per second. Sizes use binary units (`KiB`, `MiB`). RDMA Write and iperf3 exercise different APIs and workloads; their throughput comparison is contextual. NCCL comparisons use the same collective, size, and buffer mode.
+`Gb/s` means gigabits per second; `GB/s` means gigabytes per second. Sizes use binary units (`KiB`, `MiB`). RDMA Write and iperf3 exercise different APIs and workloads; their throughput comparison is contextual. The 3.2× baseline ratio uses single-stream iperf3 receive throughput (9.76 Gb/s) and the highest per-size average RDMA Write throughput (3.03 Gb/s). The 2.85× NCCL ratio uses printed busbw values (0.57 / 0.20) for the same collective, size, and buffer mode. The reported scan averages combine 26 message sizes (8 B–256 MiB) and both buffer modes; they are not averages across independent runs.
 
 ![NCCL AllReduce bandwidth over RDMA and TCP Socket](results/figures/nccl_allreduce.png)
 
@@ -99,7 +100,7 @@ The table parser uses Python 3.10+ and its standard library; figure generation r
 
 ## Findings and limits
 
-- **Functionality is supported by evidence:** verbs connectivity, a RoCEv2 packet capture, NCCL transport selection, and successful collective validation.
+- **Soft-RoCE worked end to end; TCP was faster in this session.** Verbs connectivity, RoCEv2 packet headers, NCCL transport logs, and zero validation errors establish functionality. The throughput comparisons above show the performance gap for these workloads and this configuration.
 - **Software RDMA had substantial CPU cost.** Aggregate CPU samples support that observation, but lack timestamps and process attribution. They do not establish a unique bottleneck or a per-process core budget. [CPU samples](results/figures/cpu_samples.png)
 - **More QPs did not improve the completed overlapping sizes.** The 4-QP scan failed at 1 MiB with completion status 5 (`IBV_WC_WR_FLUSH_ERR`). Its last row is excluded from successful measurements; the initiating failure is unresolved.
 - **This is a single-session study.** One scan per configuration, no independent repetitions or confidence intervals, no CPU affinity controls, and no archived NIC offload settings. The NCCL scans used 20 timed iterations per size and buffer mode.
